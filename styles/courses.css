@@ -1,0 +1,138 @@
+.courses-section {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.courses-section h2,
+.courses-section p {
+  margin-left: 4px;
+}
+
+.courses-section .types {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 4px;
+}
+
+.courses-section .types .chosen {
+  color: black;
+}
+
+.courses-section .types strong {
+  color: gray;
+}
+
+.courses-section .types strong:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.courses-section .content {
+  padding: 10px;
+  left: 0;
+  right: 0;
+  margin: 20px;
+  border: 1px solid rgb(187, 187, 187);
+}
+.courses-section .content p {
+  font-size: 18px;
+}
+
+.courses-section .button {
+  transition: 0.3s;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 12px 6px;
+}
+.courses-section .button:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+.courses-section .courses {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.courses-section .courses li {
+  transition: 0.3s;
+  width: 20%;
+  cursor: pointer;
+  min-width: 200px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.courses-section .courses li:hover {
+  transition: 0.3s;
+  padding: 0;
+}
+
+.courses-section .courses img {
+  width: 100%;
+  object-fit: fill;
+  border: 1px solid gray;
+}
+
+.courses-section .courses h4 {
+  font-size: 17px;
+}
+
+.courses-section .courses p {
+  font-size: 15px;
+  color: gray;
+  margin: 2px;
+}
+
+.courses-section .courses .rating-bar {
+  display: flex;
+  align-items: center;
+}
+
+.courses-section .rating-bar .rate {
+  color: #c4b31b;
+}
+.courses-section .rating-bar .raters {
+  color: gray;
+}
+
+.courses-section .rating-bar .full-star {
+  color: rgb(231, 231, 67);
+}
+
+.courses-section .rating-bar .empty-star {
+  color: #eee;
+}
+
+.courses-section .price {
+  display: flex;
+}
+
+.courses-section .price p {
+  color: black;
+  flex-grow: 1;
+}
+
+.courses-section .price p + p {
+  color: gray;
+  flex-grow: 1;
+  text-decoration: line-through;
+}
+@media screen and (max-width: 480px) {
+  .courses-section .courses li {
+    width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+footer {
+  background-color: rgb(29, 29, 29);
+  padding: 20px;
+
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  width: 100%;
+  max-width: 700px;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+footer ul li a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer img {
+  height: 50px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+footer > span {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}

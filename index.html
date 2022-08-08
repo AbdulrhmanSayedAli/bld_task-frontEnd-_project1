@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/navigation_bar.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/courses.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Udemy</title>
+  </head>
+  <body>
+    <nav>
+      <section class="notification">
+        <span>
+          <p>
+            <strong>Get courses from 99.99$ for a limited time</strong>
+            | A special offer for new students
+          </p>
+          <p>
+            <strong> Ends in 5h 30m 40s.</strong>
+          </p>
+        </span>
+
+        <button id="close-notification">&#10006;</button>
+      </section>
+
+      <section class="nav-bar">
+        <i class="material-icons icon menu item-in-nav">menu</i>
+        <div class="item-in-nav empty-space"></div>
+        <img
+          class="item-in-nav udemy-logo"
+          src="resources/Udemy_logo.png"
+          alt="Udemy"
+        />
+        <a class="item-in-nav" href="https://www.udemy.com/"
+          ><p>Categories</p></a
+        >
+
+        <form class="item-in-nav" action="https://www.google.com">
+          <input type="search" placeholder="Search for anything..." />
+          <button class="nav-button search" type="submit">Search</button>
+        </form>
+        <a class="item-in-nav" href="https://www.udemy.com/"
+          ><p>Udemy Business</p></a
+        >
+        <a class="item-in-nav" href="https://www.udemy.com/"
+          ><p>Teach on Udemy</p></a
+        >
+
+        <i class="material-icons item-in-nav icon cart">shopping_cart</i>
+        <button class="nav-button login item-in-nav">log in</button>
+        <button class="nav-button signup item-in-nav">sign up</button>
+        <i class="material-icons icon language item-in-nav">language</i>
+        <i class="material-icons icon search item-in-nav">search</i>
+      </section>
+    </nav>
+
+    <header>
+      <div class="header-content">
+        <div>
+          <span>
+            <h2><strong>New to Udemy?Lucky You.</strong></h2>
+            <p>
+              Courses start at 89.99$ Get your new-student offer before it
+              expires.
+            </p>
+          </span>
+        </div>
+
+        <img src="resources/header_timer.png" alt="timer image" />
+      </div>
+    </header>
+
+    <section class="courses-section">
+      <h2>A broad selection of courses</h2>
+      <p>
+        Chose from 185,000 online video courses with new additions published
+        every month
+      </p>
+
+      <span class="types">
+        <strong class="chosen">Python</strong>
+        <strong>Excel</strong>
+        <strong>Web Development</strong>
+        <strong>Javascript</strong>
+        <strong>Data Science</strong>
+        <strong>AWS Certification</strong>
+        <strong>Drawing</strong>
+      </span>
+
+      <div class="content">
+        <h3><strong>Expand your career opportunities with Python</strong></h3>
+        <p>
+          Take one of Udemy’s range of Python courses and learn how to code
+          using this incredibly useful language. Its simple syntax and
+          readability makes Python perfect for Flask, Django, data science, and
+          machine learning. You’ll learn how to build everything from games to
+          sites to apps. Choose from a range of courses that will appeal to...
+        </p>
+        <button class="button"><strong>Explore Python</strong></button>
+
+        <ul class="courses">
+          <li>
+            <img src="resources/course_3.jpg" alt="course image" />
+            <h4>
+              <strong>
+                Python for Beginners - Learn Programming from scratch
+              </strong>
+            </h4>
+            <p>Jose Portilla</p>
+            <span class="rating-bar">
+              <p class="rate">4.2</p>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <p class="raters">(2203)</p>
+            </span>
+
+            <span class="price">
+              <p><strong>49.99$</strong></p>
+              <p><strong>149.99$</strong></p>
+            </span>
+          </li>
+          <li>
+            <img src="resources/course_1.jpg" alt="course image" />
+            <h4>
+              <strong>
+                Learn Python: The Complete Python Programming Course
+              </strong>
+            </h4>
+            <p>Jose Portilla</p>
+            <span class="rating-bar">
+              <p class="rate">4.2</p>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <p class="raters">(2203)</p>
+            </span>
+
+            <span class="price">
+              <p><strong>99.99$</strong></p>
+              <p><strong>149.99$</strong></p>
+            </span>
+          </li>
+          <li>
+            <img src="resources/course_2.jpg" alt="course image" />
+            <h4>
+              <strong>
+                Learning Python for Data Analysis and Visualization
+              </strong>
+            </h4>
+            <p>Jose Portilla</p>
+            <span class="rating-bar">
+              <p class="rate">4.2</p>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <p class="raters">(2203)</p>
+            </span>
+
+            <span class="price">
+              <p><strong>89.99$</strong></p>
+              <p><strong>139.99$</strong></p>
+            </span>
+          </li>
+          <li>
+            <img src="resources/course_1.jpg" alt="course image" />
+            <h4>
+              <strong>
+                Learn Python: The Complete Python Programming Course
+              </strong>
+            </h4>
+            <p>Jose Portilla</p>
+            <span class="rating-bar">
+              <p class="rate">4.2</p>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <p class="raters">(2203)</p>
+            </span>
+
+            <span class="price">
+              <p><strong>99.99$</strong></p>
+              <p><strong>149.99$</strong></p>
+            </span>
+          </li>
+          <li>
+            <img src="resources/course_2.jpg" alt="course image" />
+            <h4>
+              <strong>
+                Learning Python for Data Analysis and Visualization
+              </strong>
+            </h4>
+            <p>Jose Portilla</p>
+            <span class="rating-bar">
+              <p class="rate">4.2</p>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <p class="raters">(2203)</p>
+            </span>
+
+            <span class="price">
+              <p><strong>89.99$</strong></p>
+              <p><strong>139.99$</strong></p>
+            </span>
+          </li>
+          <li>
+            <img src="resources/course_1.jpg" alt="course image" />
+            <h4>
+              <strong>
+                Learn Python: The Complete Python Programming Course
+              </strong>
+            </h4>
+            <p>Jose Portilla</p>
+            <span class="rating-bar">
+              <p class="rate">4.2</p>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <p class="raters">(2203)</p>
+            </span>
+
+            <span class="price">
+              <p><strong>99.99$</strong></p>
+              <p><strong>149.99$</strong></p>
+            </span>
+          </li>
+          <li>
+            <img src="resources/course_3.jpg" alt="course image" />
+            <h4>
+              <strong>
+                Python for Beginners - Learn Programming from scratch
+              </strong>
+            </h4>
+            <p>Jose Portilla</p>
+            <span class="rating-bar">
+              <p class="rate">4.2</p>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons full-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <i class="material-icons empty-star">star_rate</i>
+              <p class="raters">(2203)</p>
+            </span>
+
+            <span class="price">
+              <p><strong>49.99$</strong></p>
+              <p><strong>149.99$</strong></p>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li><a>Udemy Business</a></li>
+        <li><a>Teach on Udemy</a></li>
+        <li><a>Get the app</a></li>
+        <li><a>About us</a></li>
+        <li><a>Contact us</a></li>
+        <li><a>Careers</a></li>
+        <li><a>Blog</a></li>
+        <li><a>Help and Support</a></li>
+        <li><a>Affiliate</a></li>
+        <li><a>Investors</a></li>
+        <li><a>Terms</a></li>
+        <li><a>Privacy policy</a></li>
+        <li><a>Cookie settings</a></li>
+        <li><a>Sitemap</a></li>
+      </ul>
+
+      <span>
+        <img src="resources/Udemy_logo_white.png" alt="udemy" />
+        <p>&copy; 2022 Udemy, Inc.</p>
+      </span>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
