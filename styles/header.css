@@ -22,6 +22,7 @@ header {
 }
 
 .header-content > img {
+  transition: 0.3s;
   position: relative;
   align-self: center;
   object-fit: cover;

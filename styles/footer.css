@@ -37,5 +37,6 @@ footer p {
 footer > span {
   margin-top: 30px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
