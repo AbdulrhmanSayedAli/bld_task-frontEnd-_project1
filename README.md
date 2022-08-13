@@ -19,4 +19,6 @@ I did some extra job in this task:
 
 # view :
 
+this is only for phase 1.
+
 link : https://abdulrhmansayedali.github.io/index.html
