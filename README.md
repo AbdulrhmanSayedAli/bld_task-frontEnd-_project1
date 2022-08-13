@@ -2,17 +2,17 @@
 
 udemy clone app.
 
-- cloned sections:
+## cloned sections:
 
-* navigation bar
-* header
-* courses section
-* footer
+- navigation bar
+- header
+- courses section
+- footer
 
-- Phase 2 additions :
+## Phase 2 additions :
 
-* Activating search bar.
-* loading courses from json server API.
+- Activating search bar.
+- loading courses from json server API.
 
 # extras :
 
