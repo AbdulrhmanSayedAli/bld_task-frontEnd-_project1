@@ -131,6 +131,27 @@
   flex-grow: 1;
   text-decoration: line-through;
 }
+
+.loader {
+  margin: 50px;
+  border: 12px solid #f3f3f3;
+  border-top: 12px solid rgb(167, 11, 167);
+  border-bottom: 12px solid rgb(167, 11, 167);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .courses-section .courses li {
     width: 100%;
