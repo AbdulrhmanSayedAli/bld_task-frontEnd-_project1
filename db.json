@@ -1,0 +1,64 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Python For Beginners [in Arabic]",
+      "author": "Hassan Fulaih",
+      "image":"https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
+      "rate":5,
+      "raters_count":2041,
+      "new_price":19.99,
+      "old_price":69.99
+    },
+    {
+      "id": 2,
+      "title": "The Python and Django Learning Guide",
+      "author": "Hassan Fulaih",
+      "image":"https://img-b.udemycdn.com/course/240x135/2426532_a277_7.jpg",
+      "rate":3,
+      "raters_count":3430,
+      "new_price":49.99,
+      "old_price":99.99
+    },
+    {
+      "id": 3,
+      "title": "Python For Beginners [in Arabic]",
+      "author": "Hassan Fulaih",
+      "image":"https://img-b.udemycdn.com/course/240x135/4230080_0693.jpg",
+      "rate":2,
+      "raters_count":1041,
+      "new_price":39.99,
+      "old_price":59.99
+    },
+    {
+      "id": 4,
+      "title": "Python For Beginners [in Arabic]",
+      "author": "Hassan Fulaih",
+      "image":"https://img-b.udemycdn.com/course/240x135/4434202_3db6.jpg",
+      "rate":3,
+      "raters_count":1041,
+      "new_price":39.99,
+      "old_price":59.99
+    },
+    {
+      "id": 5,
+      "title": "Python For Beginners [in Arabic]",
+      "author": "Hassan Fulaih",
+      "image":"https://img-b.udemycdn.com/course/240x135/4455448_6e62_4.jpg",
+      "rate":5,
+      "raters_count":2041,
+      "new_price":19.99,
+      "old_price":69.99
+    },
+    {
+      "id": 6,
+      "title": "The Complete Programming Fundamentals Course",
+      "author": "Hassan Fulaih",
+      "image":"https://img-b.udemycdn.com/course/240x135/4226056_5e40_3.jpg",
+      "rate":4,
+      "raters_count":4041,
+      "new_price":99.99,
+      "old_price":149.99
+    }
+  ]
+}

@@ -37,6 +37,21 @@ header {
   font-size: 17px;
 }
 
+.header-content > div {
+  animation: slidein;
+  animation-duration: 1s;
+  position: relative;
+}
+@keyframes slidein {
+  from {
+    right: 100px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .header-content > div h2 {
     font-size: 18px;
