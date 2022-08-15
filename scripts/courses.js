@@ -1,7 +1,9 @@
 ////load corurses/////
 
 let courses = [];
+let coursesTabs = document.querySelectorAll(".courses-section .types strong");
 let isLoaded = false;
+let currentChosenTab = "Python";
 let coursesView = document.querySelector(".courses-section .courses");
 let formInput = document.querySelector("nav form input");
 
@@ -32,6 +34,10 @@ function getCourse(courseData) {
 </li>`;
 }
 
+function getLoading() {
+  return `<div class="loader"></div>`;
+}
+
 function search() {
   if (!isLoaded) {
     return;
@@ -51,15 +57,38 @@ function search() {
   }
 }
 
-fetch("http://localhost:3000/courses")
-  .then((resonse) => resonse.json())
-  .then((json) => {
-    isLoaded = true;
-    coursesView.innerHTML = "";
-    for (let i = 0; i < json.length; i++) {
-      coursesView.innerHTML += getCourse(json[i]);
-      courses.push(json[i]);
-    }
-  });
+function loadCourses() {
+  isLoaded = false;
+  courses = [];
+  coursesView.innerHTML = "";
+  coursesView.innerHTML += getLoading();
+  fetch(`http://localhost:3000/${currentChosenTab}`)
+    .then((resonse) => resonse.json())
+    .then((json) => {
+      isLoaded = true;
+      coursesView.innerHTML = "";
+      for (let i = 0; i < json.length; i++) {
+        coursesView.innerHTML += getCourse(json[i]);
+        courses.push(json[i]);
+      }
+    });
+}
 
+function onTabClick(tab) {
+  for (let i = 0; i < coursesTabs.length; i++) {
+    coursesTabs[i].classList.remove("chosen");
+  }
+  tab.classList.add("chosen");
+  currentChosenTab = tab.textContent.replace(" ", "");
+  loadCourses();
+}
+
+loadCourses();
 document.querySelector("nav form button").addEventListener("click", search);
+
+console.log(coursesTabs);
+for (let i = 0; i < coursesTabs.length; i++) {
+  coursesTabs[i].addEventListener("click", () => {
+    onTabClick(coursesTabs[i]);
+  });
+}

@@ -15,19 +15,23 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-left: 4px;
+  transition: 0.3s;
 }
 
 .courses-section .types .chosen {
   color: black;
+  transition: 0.3s;
 }
 
 .courses-section .types strong {
   color: gray;
+  transition: 0.3s;
 }
 
 .courses-section .types strong:hover {
   color: black;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .courses-section .content {
