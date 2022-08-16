@@ -86,7 +86,6 @@ function onTabClick(tab) {
 loadCourses();
 document.querySelector("nav form button").addEventListener("click", search);
 
-console.log(coursesTabs);
 for (let i = 0; i < coursesTabs.length; i++) {
   coursesTabs[i].addEventListener("click", () => {
     onTabClick(coursesTabs[i]);
