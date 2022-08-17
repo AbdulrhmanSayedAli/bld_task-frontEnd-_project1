@@ -57,6 +57,35 @@ function search() {
   }
 }
 
+function manageOwlCarousel() {
+  $(".owl-carousel").owlCarousel({
+    loop: false,
+    margin: 15,
+    nav: true,
+    navText: [
+      `<i class='material-icons'>	keyboard_arrow_left</i>`,
+      `<i class='material-icons'>	keyboard_arrow_right</i>`,
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      800: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+      1200: {
+        items: 5,
+      },
+    },
+  });
+}
+
 function loadCourses() {
   isLoaded = false;
   courses = [];
@@ -77,33 +106,7 @@ function loadCourses() {
         );
         courses.push(json[i]);
       }
-
-      $(".owl-carousel").owlCarousel({
-        loop: false,
-        margin: 15,
-        nav: true,
-        navText: [
-          `<i class='material-icons'>	keyboard_arrow_left</i>`,
-          `<i class='material-icons'>	keyboard_arrow_right</i>`,
-        ],
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          800: {
-            items: 3,
-          },
-          1000: {
-            items: 4,
-          },
-          1200: {
-            items: 5,
-          },
-        },
-      });
+      manageOwlCarousel();
     });
 }
 

@@ -1,0 +1,10 @@
+.categories .row img {
+  transition: 0.3s;
+  width: 90%;
+}
+
+.categories .row img:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
