@@ -59,29 +59,14 @@
   background-color: black;
 }
 
-.courses-section .courses {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  justify-content: center;
-  display: flex;
-}
-
-.courses-section .courses li {
+.courses-section .courses .item {
   transition: 0.3s;
-  width: 20%;
-  cursor: pointer;
-  min-width: 200px;
   padding: 10px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
-.courses-section .courses li:hover {
+.courses-section .courses .item:hover {
   transition: 0.3s;
+  cursor: pointer;
   padding: 0;
 }
 
@@ -157,7 +142,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .courses-section .courses li {
+  .courses-section .courses .item {
     width: 100%;
   }
 }

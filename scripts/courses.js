@@ -13,7 +13,7 @@ function getCourse(courseData) {
     ratingBar += `<i class="material-icons full-star">star_rate</i>`;
   for (let i = 0; i < 5 - courseData["rate"]; i++)
     ratingBar += `<i class="material-icons empty-star">star_rate</i>`;
-  return `<li>
+  return `<div class="item">
   <img src="${courseData["image"]}" alt="course image" />
   <h4>
     <strong>
@@ -31,7 +31,7 @@ function getCourse(courseData) {
     <p><strong>${courseData["new_price"]}$</strong></p>
     <p><strong>${courseData["old_price"]}$</strong></p>
   </span>
-</li>`;
+</div>`;
 }
 
 function getLoading() {
@@ -67,10 +67,43 @@ function loadCourses() {
     .then((json) => {
       isLoaded = true;
       coursesView.innerHTML = "";
+      coursesView.innerHTML += `
+      <div class="row">
+      <div class="col-12 m-auto">
+      <div class="owl-carousel owl-theme"></div></div></div>`;
       for (let i = 0; i < json.length; i++) {
-        coursesView.innerHTML += getCourse(json[i]);
+        coursesView.querySelector(".owl-carousel").innerHTML += getCourse(
+          json[i]
+        );
         courses.push(json[i]);
       }
+
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        margin: 15,
+        nav: true,
+        navText: [
+          `<i class='material-icons'>	keyboard_arrow_left</i>`,
+          `<i class='material-icons'>	keyboard_arrow_right</i>`,
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          800: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+          1200: {
+            items: 5,
+          },
+        },
+      });
     });
 }
 
@@ -83,7 +116,6 @@ function onTabClick(tab) {
   loadCourses();
 }
 
-loadCourses();
 document.querySelector("nav form button").addEventListener("click", search);
 
 for (let i = 0; i < coursesTabs.length; i++) {
@@ -91,3 +123,5 @@ for (let i = 0; i < coursesTabs.length; i++) {
     onTabClick(coursesTabs[i]);
   });
 }
+
+loadCourses();

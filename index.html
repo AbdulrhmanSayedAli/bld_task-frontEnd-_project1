@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/courses.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -109,33 +122,41 @@
         </p>
         <button class="button"><strong>Explore Python</strong></button>
 
-        <ul class="courses">
+        <div class="courses container-fluid w-100">
           <div class="loader"></div>
+          <!-- <div class="row">
+            <div class="col-12 m-auto">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <img
+                    src="https://img-b.udemycdn.com/course/480x270/4160102_c8c5_4.jpg"
+                    alt="course image"
+                  />
+                  <h4>
+                    <strong>
+                      Python for Beginners - Learn Programming from scratch
+                    </strong>
+                  </h4>
+                  <p>Jose Portilla</p>
+                  <span class="rating-bar">
+                    <p class="rate">4.2</p>
+                    <i class="material-icons full-star">star_rate</i>
+                    <i class="material-icons full-star">star_rate</i>
+                    <i class="material-icons empty-star">star_rate</i>
+                    <i class="material-icons empty-star">star_rate</i>
+                    <i class="material-icons empty-star">star_rate</i>
+                    <p class="raters">(2203)</p>
+                  </span>
 
-          <!--   <li>
-            <img src="resources/course_3.jpg" alt="course image" />
-            <h4>
-              <strong>
-                Python for Beginners - Learn Programming from scratch
-              </strong>
-            </h4>
-            <p>Jose Portilla</p>
-            <span class="rating-bar">
-              <p class="rate">4.2</p>
-              <i class="material-icons full-star">star_rate</i>
-              <i class="material-icons full-star">star_rate</i>
-              <i class="material-icons empty-star">star_rate</i>
-              <i class="material-icons empty-star">star_rate</i>
-              <i class="material-icons empty-star">star_rate</i>
-              <p class="raters">(2203)</p>
-            </span>
-
-            <span class="price">
-              <p><strong>49.99$</strong></p>
-              <p><strong>149.99$</strong></p>
-            </span>
-          </li> -->
-        </ul>
+                  <span class="price">
+                    <p><strong>49.99$</strong></p>
+                    <p><strong>149.99$</strong></p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
       </div>
     </section>
 
@@ -163,12 +184,20 @@
       </span>
     </footer>
 
-    <script type="text/javascript" src="scripts/app.js"></script>
-    <script type="text/javascript" src="scripts/courses.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/courses.js"></script>
   </body>
 </html>
